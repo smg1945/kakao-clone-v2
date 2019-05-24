@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Find | Kakao Clone</title>
+    <title>Friends | Kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -28,11 +28,14 @@
     </div>
     <header class="header">
       <div class="header__header column">
-        <h1 class="header__title">검색</h1>
+        <h1 class="header__title">친구</h1>
       </div>
       <div class="header__header column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-user-plus"></i>
         </span>
         <span class="header__icon">
           <a href="settings.html">
@@ -41,61 +44,55 @@
         </span>
       </div>
     </header>
-    <main class="find">
-      <header class="find__header">
-        <ul class="find__header-list">
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-qrcode fa-2x"></i>
-            </span>
-            <span class="header-btn__title">
-              QR코드
-            </span>
-          </li>
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-address-book fa-2x"></i>
-            </span>
-            <span class="header-btn__title">
-              연락처에서 추가
-            </span>
-          </li>
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="far fa-address-card fa-2x"></i>
-            </span>
-            <span class="header-btn__title">
-              ID로 추가
-            </span>
-          </li>
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="far fa-envelope fa-2x"></i>
-            </span>
-            <span class="header-btn__title">
-              초대
-            </span>
-          </li>
-        </ul>
-      </header>
-      <ul class="find__recommended">
-        <h5 class="find__title">
-          친구 추천
-        </h5>
-        <li class="find__friend friend friend--lg">
-          <div class="friend__column">
-            <img src="images/me.jpg" class="friend__avatar" />
-            <div class="friend__content">
-              <span class="friend__name">
-                수상한 사람
-              </span>
+    <main class="friends">
+      <header class="friends__header">
+        <div class="friends__friend friend">
+            <div class="friend__column">
+                <img src="images/me.jpg" class="g-avatar friend__avatar" />
+                <div class="friend__content">
+                    <span class="friend__name">
+                        이하영
+                    </span>
+                </div>
             </div>
-          </div>
-          <div class="friend__column">
-            <div class="friend__add-btn">
-              <i class="fas fa-user-plus"></i>
+        </div>
+      <ul class="friends__list">
+        <h5 class="friends__title">친구 3</h5>
+        <li class="friends__friend friend friend--lg">
+            <div class="friend__column">
+                <img src="images/me.jpg" class="friend__avatar" />
+                <div class="friend__content">
+                    <span class="friend__name">
+                        Father
+                    </span>
+                </div>
             </div>
-          </div>
+        </li>
+        <li class="friends__friend friend friend--lg">
+            <div class="friend__column">
+                <img src="images/me.jpg" class="friend__avatar" />
+                <div class="friend__content">
+                    <span class="friend__name">
+                        Mother
+                    </span>
+                    <span class="friend__status">
+                        주님이면 충분합니다~♡
+                    </span>
+                </div>
+            </div>
+        </li>
+        <li class="friends__friend friend friend--lg">
+            <div class="friend__column">
+                <img src="images/me.jpg" class="friend__avatar" />
+                <div class="friend__content">
+                    <span class="friend__name">
+                        Sister
+                    </span>
+                    <span class="friend__status">
+                        감사
+                    </span>
+                </div>
+            </div>
         </li>
       </ul>
     </main>
@@ -103,7 +100,7 @@
       <ul class="nav__list">
         <li class="nav__list-item">
           <a href="friends.html" class="nav__list-link">
-            <i class="far fa-user"></i>
+            <i class="fas fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item">
